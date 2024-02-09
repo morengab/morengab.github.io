@@ -1,0 +1,58 @@
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(249, 247, 243);
+    z-index: 1000;
+}
+#lightbox nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+#lightbox nav button {
+    background: none;
+    border: none;
+    color: rgb(53, 48, 39);
+    font-size: 2.0em;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right:5px;
+}
+#lightbox nav button:hover {
+    color: rgba(53, 48, 39, 0.5);
+}
+#lightbox figure {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    max-width: 995px;
+    margin: 0 auto;
+}
+#lightbox figure img {
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.lightbox__open {
+    display: block;
+}
+.lightbox__close {
+    display: none;
+}
+.lightbox__image:hover {
+    opacity: .5;
+}
+/* Apply this to body when lightbox is open */
+.scrollbar__hide {
+    overflow: hidden;
+}
+/* Apply this to body when lightbox closes */
+.scrollbar__auto {
+    overflow: auto;
+}

@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(247, 243, 242);
+}
+
+/* 
+Global styles ... some font  
+*/
+body {
+  font-family: "IBM Plex Serif", Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  text-align: center;
+  color: rgb(23, 20, 20);
+}
+h1 {
+  font-size: medium;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 10px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+p {
+  /* line-height: 1.5em; */
+  padding-bottom: 20px;
+}
+dt {
+  font-weight: bold;
+}
+article {
+  margin-bottom: 50px;
+}
+/* 
+Style for global header + nav  
+*/
+header {
+  background-color: #F7F3F2;
+  position: sticky;
+  top: 0px;
+}
+header h1 {
+  display: none;
+}
+header nav {
+  margin: 0 auto;
+  max-width: 995px;
+  padding: 20px;
+  height: 100px;
+}
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  opacity: 0.8;
+  color:rgb(53, 48, 39);
+}
+.nav-logo {
+  float: left;
+}
+.nav-link {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.no-margin-right {
+  margin-right: 0px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}     
+/* 
+Style for main and sections 
+*/
+main {
+  margin: 0 auto;
+  max-width: 995px;
+}
+
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* 
+Global link styles  
+*/
+a:link, a:visited {
+  color: rgb(53, 48, 39);
+  text-underline-offset: 0.4em;
+  text-decoration-color: rgb(198, 187, 175);
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color:rgb(0, 125, 121);
+}
+
+.primary-link:link, .primary-link:visited {
+  color: rgb(0, 125, 121);
+  text-decoration: none; /* remove the underline */
+  border-bottom: 1px dashed rgb(198, 187, 175); /* add a dotted bottom border */
+  padding-bottom: 0.1em; 
+}
+
+.primary-link:hover {
+  color: darkcyan;
+  border-bottom-color: rgb(0, 125, 121);
+}
+
+.subtle-link:link, .subtle-link:visited {
+  color: rgb(86, 81, 81);
+  text-underline-offset: 0.4em;
+  font-style: italic;
+}
+
+.subtle-link:hover {
+  color: rgb(53, 48, 39);
+  text-decoration-color: rgb(53, 48, 39);
+}
+
+.external-link:link, .external-link:visited {
+  color: rgb(86, 81, 81);
+  text-decoration: none;
+  border-bottom: 1px dashed rgb(86, 81, 81); /* add a dotted bottom border */
+  padding-bottom: 0.1em;
+}
+
+.external-link:hover {
+  color: rgb(0, 125, 121);
+  border-bottom-color: rgb(0, 125, 121);
+}
+
+/* 
+Article navigation
+*/
+.article-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.article-nav li {
+  display: inline;
+  padding-left: 7px;
+  padding-right: 7px;
+  /* font-style: italic; */
+  /* font-size: small; */
+}
+
+.cover-image {
+  width: 100%;
+}
+/*TODO rework this style*/
+.section-synopsis-cont p {
+  text-align: left;
+}
+.section-synopsis-cont :last-child {
+  padding-bottom: 0px;
+}
+
+/* 
+Style for image + text items  
+*/
+.img-text__item {
+  padding-bottom: 40px;
+}
+.img-text__item p {
+  padding-bottom: 0;
+}
+.img-text__item:last-child {
+  padding-bottom: 0px;
+}
+.img-text__link:link, .img-text__link:visited {
+  text-decoration: none;
+}
+.img-text__link:hover {
+  opacity: 0.8;
+}
+.img-text__text-subtle {
+  font-size: small;
+  color:rgb(86, 81, 81);
+}
+.img-text__text-bold {
+  font-weight: bolder;
+}
+
+/* 
+Style for items typically in lists like press, etc.
+*/
+.items-list p {
+ padding-bottom: 0px;
+}
+.items-list li {
+  margin-bottom: 20px;
+}
+.items-list:last-child {
+  padding-bottom: 0px;
+}
+.items-list .subtle-text {
+  font-size: 14px;
+}
+
+/* 
+Style for footer
+*/
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(229, 224, 223);
+}
+footer .footer-logo {
+  padding-bottom: 20px;
+}
+footer p {
+  padding-bottom: 10px;
+}
+
+/* 
+General helper styles 
+*/
+.subtitle {
+  font-size: 26px;
+  line-height: 1.7em;
+  padding-bottom: 20px;
+}
+.accent-text {
+  color: rgb(0, 125, 121);
+}
+.subtle-text {
+  color: rgb(86, 81, 81);
+}
+.dotted-border {
+  border-top: 4px dotted rgb(198, 187, 175);
+}
+.no-bullets {
+  list-style-type: none;
+}
+.compress {
+  padding-bottom: 0px;
+}
+.expand {
+  padding-bottom: 20px;
+}
+.expand-more {
+  padding-bottom: 30px;
+}
+.expand-top {
+  padding-top: 20px;
+}
+.no-top-padding {
+  padding-top: 0px;
+}
+.no-bottom-padding {
+  padding-bottom: 0px;
+}
+.no-padding {
+  padding: 0px;
+}
+.solid-border{
+  border-bottom: 2px solid rgb(198, 187, 175)
+}
+.items-list-dash {
+  display: none;
+}
+.more-padding-top {
+  padding-top: 40px;
+}
+.padding-left-right {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* 
+General layout 
+*/
+@media (min-width: 650px) {
+  .layout-sub-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .img-text__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 850px) {
+  .layout-sub-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .items-list {
+    text-align: left;
+  }
+  .items-list li p {
+    display: inline;
+  }
+  .items-list .date {
+    padding-right: 40px;
+  }
+  .items-list-dash {
+    display: inline;
+  }
+  .two-col-med {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (min-width: 1020px) {
+  .layout-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .layout-container h3, .layout-container section {
+      text-align: left;
+      border-bottom: none;
+  }
+  .meta {
+    /* font-size: 14px; */
+  }
+  .in-page-link {
+   display: none;
+  }
+}
