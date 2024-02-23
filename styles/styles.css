@@ -259,20 +259,23 @@ General helper styles
 .compress {
   padding-bottom: 0px;
 }
+.no-bottom-padding {
+  padding-bottom: 0px;
+}
 .expand {
   padding-bottom: 20px;
 }
 .expand-more {
   padding-bottom: 30px;
 }
-.expand-top {
-  padding-top: 20px;
-}
 .no-top-padding {
   padding-top: 0px;
 }
-.no-bottom-padding {
-  padding-bottom: 0px;
+.expand-top {
+  padding-top: 20px;
+}
+.more-padding-top {
+  padding-top: 40px;
 }
 .no-padding {
   padding: 0px;
@@ -283,9 +286,7 @@ General helper styles
 .items-list-dash {
   display: none;
 }
-.more-padding-top {
-  padding-top: 40px;
-}
+
 .padding-left-right {
   padding-left: 20px;
   padding-right: 20px;

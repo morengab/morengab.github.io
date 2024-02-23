@@ -12,15 +12,9 @@
     <link href="styles/plex.css" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
     <style>
-        html {
-            background-color: #d9fbfb;
-        }
         body {
-            color: #007d79;
-            text-align: left;
-        }
-        header {
-            background-color: #d9fbfb;
+            color: #171414;
+            text-align: center;
         }
         h1 {
             font-size: 40px;
@@ -31,6 +25,7 @@
         h3 {
             font-size: x-large;
             font-weight: 600;
+            color: #565151;
         }
         p {
             font-size: 26px;
@@ -41,7 +36,6 @@
         ul {
             font-size: x-large;
             list-style-type: none;
-            /* padding-top: 20px; */
             padding-bottom: 30px;
         }
         li {
@@ -49,14 +43,44 @@
             line-height: 1.5;
             margin-bottom: 10px;
         }
-        article {
-            margin: 100px 20px;
-        }
-        a:link, a:visited {
-            color: #007d79;
-        }
         a:hover {
             text-decoration-color: #007d79;
+        }
+        .img-text-list li {
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+        .img-text-list a {text-decoration: none;}
+        .img-text-list a:hover {
+            background-color: pink;
+        }
+        .img-text-list figure {
+            padding-bottom: 0px;
+
+        }  
+        .img-text-list figcaption {
+            padding-top: 20px;
+            /* padding-bottom: 20px; */
+        }         
+        .img-text-list .meta-text { 
+            font-size: 16px; 
+            font-weight: 800;
+            padding-bottom: 10px;
+            color: #565151;
+        }         
+        .img-text-list h2 { 
+            font-size: 24px; 
+            padding-bottom: 5px;
+        }         
+        .img-text-list p { 
+            font-size: 20px; 
+            margin:0 auto; 
+            max-width: 500px;
+            padding-bottom: 0px;
+            line-height: 1.7em;
+        }
+        footer p {
+            font-size: 18px;
         }
     </style>
 </head>
@@ -72,18 +96,55 @@
 
     <main>
         <article>
-            <h1>Gaby Moreno César</h1>
-            <p>Hello and welcome! I'm a Design Principal at IBM, working on IBM Cloud. I have a decade of experience designing award-winning, enterprise products.</p>
-            <h3>Select work:</h3>
-            <ul>
-                <li><a href="satellite.html">IBM Cloud Satellite</a></li>
-                <li><a href="roks.html">Red Hat OpenShift on IBM Cloud</a></li>
-                <li><a href="k8s.html">The Kubernetes Special Interest Group for Usability</a></li>
-            </ul>
-            
-
+            <section class="compress">
+                <p><strong>Gaby Moreno César</strong> is a Design Principal at IBM with a decade of experience designing award-winning, enterprise products. She currently works on IBM Cloud and loves serving people and businesses seeking transformation through the power of human-centered design and technology.</p>
+            </section>
+            <section id="work" class="more-padding-top">  
+                <h3 class="expand-more">Selected Work</h3>    
+                <ul class="img-text-list">
+                    <li>
+                        <a href="satellite.html">
+                            <figure>
+                                <img class="cover-image" src="images/satellite/satellite-create-dark-gray-bkgd.jpeg" alt="">
+                            </figure>
+                            <figcaption>
+                                <p class="meta-text">2021</p>
+                                <h2><strong>IBM Cloud Satellite</strong></h2>
+                                <p><em>A new product based on an emerging cloud computing model called distributed cloud</em></p>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="roks.html">
+                            <figure>
+                                <img class="cover-image" src="images/roks/roks-catalog-laptop.png" alt="">
+                            </figure>
+                            <figcaption>
+                                <p class="meta-text">2019</p>
+                                <h2><strong>Red Hat OpenShift on IBM Cloud</strong></h2>
+                                <p><em>A new product representing the first integration as part of IBM’s acquisition of Red Hat</em></p>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="k8s.html">
+                            <figure>
+                                <img class="cover-image" src="images/k8s/k8s-pr-approved.png" alt="">
+                            </figure>
+                            <figcaption>
+                                <p class="meta-text">2022</p>
+                                <p><strong>Kubernetes SIG Usability</strong></p>
+                                <p><em>A UX-focused community within the Kubernetes open source project</em></p>
+                            </figcaption>
+                        </a>
+                    </li>    
+                </ul>
+            </section>
         </article>
     </main>
+    <footer>
+        <p><a href="https://github.com/morengab/morengab.github.io" target="_blank">Hand coded</a> by Gaby.</p>
+    </footer>
 
 </body>
 </html>
